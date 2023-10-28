@@ -1,0 +1,53 @@
+@font-face {
+    font-family: myFirstFont;
+    src:url("font.otf");
+  }
+
+#topest{  
+    border-color: #136a8a;
+    width: 100%;
+    background-color: #136a8a;
+    height: 40px;
+    padding: 0%,0%,0%,0%;
+    margin: 0;
+}
+.toplist{
+width: 25%;
+font-family: myFirstFont;
+}
+#icon01{
+    height: 40px;
+    padding: 0%;
+}
+
+
+
+
+
+
+
+body {
+    background: #ABCDEF;
+    font-family:myFirstFont;
+    min-height: 90vh;
+  }
+  footer {
+    position: absolute;
+    color: #136a8a;
+    bottom: 10px;
+    padding-left: 20px;
+  }
+  footer p {
+    display: inline;
+  }
+  footer a {
+    color: green;
+    text-decoration: none;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  footer .heart {
+    color: #B22222;
+    font-size: 1.5em
+  }
