@@ -10,57 +10,39 @@
     </head>
     <body>
         <main>
-            <div>
-                <table id="topest">
-                    <tbody>
-                    <tr>
-                        <td class="toplist" id="option01"><img  src="icon.png" alt="icon" id="icon01"></td>
-                        <td class="toplist" id="option02">EXEMPLE HTML</td>
-                        <td class="toplist" id="option03">EXEMPLE CSS</td>
-                        <td class="toplist" id="option04">EXEMPLE JS</td>
-                        <td class="toplist" id="option05">FORM</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    </tbody>
-                </table>
+            <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
+            <button class="tablink" onclick="openPage('HTML', this, 'green')" >HTML</button>
+            <button class="tablink" onclick="openPage('CSS', this, 'blue')">CSS</button>
+            <button class="tablink" onclick="openPage('JS', this, 'orange')">JS</button>
+            <button class="tablink" onclick="openPage('FORM', this, 'orange')">FORM</button>
+
+          
+            <div id="Home" class="tabcontent">
+                <p>Home is where the heart is..</p>
             </div>
 
-            <div id="option0"></div>
-
-
-            <div id="option1">
-                <h1>HELLO</h1>
+            <div id="HTML" class="tabcontent">
+                <h3>Home</h3>
+                <p>Home is where the heart is..</p>
             </div>
 
-
-            <div id="option2">
-                <h1>EXEMPLE HTML</h1>
+            <div id="CSS" class="tabcontent">
+                <h3>Home</h3>
+                <p>Home is where the heart is..</p>
             </div>
 
-            <div id="option3">
-                <h1>EXEMPLE CSS</h1>
-            </div>
-
-            <!-- exemple js -->
-            <div id="option4">
-                <iframe width="800" height="600" id="vid" src="https://www.youtube.com/watch?v=yFYEzs6Gvsg"></iframe>
+            <div id="JS" class="tabcontent">
+                <iframe id="vid" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
                 <h1>EXEMPLE JS </h1>
-                <table id="midset">
-                    <tr>
-                        <td class="midlist" id="jss1">js1</td>
-                        <td class="midlist" id="jss2">js2</td>
-                        <td class="midlist" id="jss3">js3</td>
-                        <td class="midlist" id="jss4">js4</td>
-                        <td class="midlist" id="jss5">js5</td>
-                        <td class="midlist" id="jss6">js6</td>
-                        <td class="midlist" id="jss7">js7</td>
-                        <td class="midlist" id="jss8">js8</td>
-                    </tr>
-                </table>
-                <div id="jsdef"></div>
-                <div id="jscalc" class="js">
+                <button class="tablink1" onclick="openPage2('JS1')" id="defaultOpen2">JS1</button>
+                <button class="tablink1" onclick="openPage2('JS2')">JS2</button>
+                <button class="tablink1" onclick="openPage2('JS3')">JS3</button>
+                <button class="tablink1" onclick="openPage2('JS4')">JS4</button>
+                <button class="tablink1" onclick="openPage2('JS5')">JS5</button>
+                <button class="tablink1" onclick="openPage2('JS6')">JS6</button>
+                <button class="tablink1" onclick="openPage2('JS7')">JS7</button>
+                <button class="tablink1" onclick="openPage2('JS8')">JS8</button>
+                <div id="JS1" class="JSS">
                     <table>
                         <tr>
                             <Td><label for="input1">NUM1 : </label></Td>
@@ -74,34 +56,22 @@
                         </tr>
                         <tr>
                             <table id="mul">
-                                <td><button id="+" class="op">+</button></td>
-                                <td><button id="-" class="op">-</button></td>
-                                <td><button id="*" class="op">*</button></td>
-                                <td><button id="/" class="op">/</button></td>
+                                <td><button id="+" class="op" onclick="add()">+</button></td>
+                                <td><button id="-" class="op" onclick="sub()">-</button></td>
+                                <td><button id="*" class="op" onclick="mult()">*</button></td>
+                                <td><button id="/" class="op" onclick="div()">/</button></td>
                             </table>
                         </tr>                 
                     </table>
                 </div>
-                <div id="jsalert" class="js">
-                    <button id="Abutton">Alert</button>
-                </div>
-                <div id="jsmulti" class="js">
-                </div>
-                <div id="jssett" class="js">
-                </div>
-                <div id="jshtml" class="js">
-                </div>
-                <div id="jstxt" class="js">
-                </div>
-                <div id="jsevent" class="js">
-                </div>
-                <div id="jssrc" class="js">
-                </div>
                 
-               
+                <div id="JS2" class="JSS">
+                    <button onclick="alert('9chouch')" >alert</button>
+                </div>
+                    
             </div>
 
-            <div id="option5">
+            <div id="FORM" class="tabcontent">
                 <fieldset class="c">
                     <legend>Coordonnées</legend>
                     <form>
@@ -138,9 +108,6 @@
                     </form>
                 </fieldset>
             </div>
-
-
-
 
         </main>
         <footer>

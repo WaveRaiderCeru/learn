@@ -2,43 +2,13 @@
     font-family: myFirstFont;
     src:url("font.otf");
   }
-
-
-.toplist{
-width: 25%;
-font-family: myFirstFont;
-}
-.midlist{
-  width: 15%;
-  font-family: myFirstFont;
-  }
-
-
-
-
-#topest{  
-    border-color: #136a8a;
-    width: 100%;
-    background-color: #136a8a;
-    height: 40px;
-    padding: 0%,0%,0%,0%;
+  body, html {
+    height: 100%;
     margin: 0;
-}
-#midset{  
-  border-color: #2299c5;
-  background-color: #3a8e8e;
-  height: 20px;
-}
-#icon01{
-    height: 40px;
-    padding: 0%;
-}
-#mul{
-  padding: 0;
-}
+    font-family: MyFirstFont;
+  }
 #vid{
-  float:right;
-  position: relative;
+  float: right;
 }
 
 
@@ -47,10 +17,33 @@ font-family: myFirstFont;
 
 
 
-body {
-    background: #ABCDEF;
-    font-family:myFirstFont;
-    min-height: 90vh;
+
+
+.tablink1 {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 6%;
+}
+  .tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
   }
   footer {
     position: absolute;
@@ -68,6 +61,7 @@ body {
   footer a:hover {
     text-decoration: underline;
   }
+
   footer .heart {
     color: #B22222;
     font-size: 1.5em
