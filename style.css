@@ -3,6 +3,19 @@
     src:url("font.otf");
   }
 
+
+.toplist{
+width: 25%;
+font-family: myFirstFont;
+}
+.midlist{
+  width: 15%;
+  font-family: myFirstFont;
+  }
+
+
+
+
 #topest{  
     border-color: #136a8a;
     width: 100%;
@@ -11,13 +24,21 @@
     padding: 0%,0%,0%,0%;
     margin: 0;
 }
-.toplist{
-width: 25%;
-font-family: myFirstFont;
+#midset{  
+  border-color: #2299c5;
+  background-color: #3a8e8e;
+  height: 20px;
 }
 #icon01{
     height: 40px;
     padding: 0%;
+}
+#mul{
+  padding: 0;
+}
+#vid{
+  float:right;
+  position: relative;
 }
 
 
