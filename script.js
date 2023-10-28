@@ -78,7 +78,7 @@ sjs8.addEventListener("click",jsshow8);
 
 
 
-var accb = function{
+var accb = function(){
     alert("welp");
 }
 var but1=document.getElementById("Abutton");
