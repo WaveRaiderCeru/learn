@@ -10,6 +10,9 @@
 #vid{
   float: right;
 }
+#imm{
+  width: 10%;
+}
 
 
 
@@ -17,8 +20,9 @@
 
 
 
-
-
+.c #d {
+  width:100px;
+}
 .tablink1 {
   background-color: #555;
   color: white;

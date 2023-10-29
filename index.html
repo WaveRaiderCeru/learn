@@ -1,126 +1,155 @@
 <!DOCTYPE html>
-<html lang="en" >
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="./style.css">
-        <link rel="icon" href="icon.png" type="image/icon type">
-        <title>
-            Black Terrako
-        </title>
-    </head>
-    <body>
-        <main>
-            <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
-            <button class="tablink" onclick="openPage('HTML', this, 'green')" >HTML</button>
-            <button class="tablink" onclick="openPage('CSS', this, 'blue')">CSS</button>
-            <button class="tablink" onclick="openPage('JS', this, 'orange')">JS</button>
-            <button class="tablink" onclick="openPage('FORM', this, 'orange')">FORM</button>
+<html lang="en">
 
-          
-            <div id="Home" class="tabcontent">
-                <p>Home is where the heart is..</p>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="icon.png" type="image/icon type">
+    <title>
+        Black Terrako
+    </title>
+</head>
+
+<body>
+    <main>
+        <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
+        <button class="tablink" onclick="openPage('HTML', this, 'green')">HTML</button>
+        <button class="tablink" onclick="openPage('CSS', this, 'blue')">CSS</button>
+        <button class="tablink" onclick="openPage('JS', this, 'orange')">JS</button>
+        <button class="tablink" onclick="openPage('FORM', this, 'orange')">FORM</button>
+
+
+        <div id="Home" class="tabcontent">
+            <p>Home is where the heart is..</p>
+        </div>
+
+        <div id="HTML" class="tabcontent">
+            <h3>Home</h3>
+            <p>Home is where the heart is..</p>
+        </div>
+
+        <div id="CSS" class="tabcontent">
+            <h3>Home</h3>
+            <p>Home is where the heart is..</p>
+        </div>
+
+        <div id="JS" class="tabcontent">
+
+            <video id="vid" controls>
+                <source src="vid/vid.mp4" type="video/mp4">
+
+            </video>
+
+            <h1 id="vv">EXEMPLE JS </h1>
+            <button class="tablink1" onclick="openPage2('JS1')" id="defaultOpen2">JS1</button>
+            <button class="tablink1" onclick="openPage2('JS2')">JS2</button>
+            <button class="tablink1" onclick="openPage2('JS3')">JS3</button>
+            <button class="tablink1" onclick="openPage2('JS4')">JS4</button>
+            <button class="tablink1" onclick="openPage2('JS5')">JS5</button>
+            <button class="tablink1" onclick="openPage2('JS6')">JS6</button>
+            <button class="tablink1" onclick="openPage2('JS7')">JS7</button>
+            <button class="tablink1" onclick="openPage2('JS8')">JS8</button>
+            <div id="JS1" class="JSS">
+                <table>
+                    <tr>
+                        <Td><label for="input1">NUM1 : </label></Td>
+                        <td> <input type="number" id="input1"></td>
+                        <td><label for="input2">NUM2 : </label></td>
+                        <td><input type="number" id="input2"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="output1">RES : </label></td>
+                        <td><input type="number" id="output1"></td>
+                    </tr>
+                    <tr>
+                        <table id="mul">
+                            <td><button id="+" class="op" onclick="add()">+</button></td>
+                            <td><button id="-" class="op" onclick="sub()">-</button></td>
+                            <td><button id="*" class="op" onclick="mult()">*</button></td>
+                            <td><button id="/" class="op" onclick="div()">/</button></td>
+                        </table>
+                    </tr>
+                </table>
             </div>
 
-            <div id="HTML" class="tabcontent">
-                <h3>Home</h3>
-                <p>Home is where the heart is..</p>
+            <div id="JS2" class="JSS">
+                <button onclick="alert('9chouch')">alert</button>
             </div>
-
-            <div id="CSS" class="tabcontent">
-                <h3>Home</h3>
-                <p>Home is where the heart is..</p>
+            <div id="JS3" class="JSS">
+                <button id="bt1" class="b">bt1</button>
+                <button id="bt2" class="b">bt2</button>
+                <button id="bt3" class="b">bt3</button>
+                <button id="bt4" class="b">bt4</button>
             </div>
+            <div id="JS4" class="JSS">
+                <button id="bt5" onclick="bt5f()">settattributr</button>
+            </div>
+            <div id="JS5" class="JSS">
+                <button id="bt6" onclick="alert(document.getElementById('Home').innerHTML)">innerHTML</button>
+            </div>
+            <div id="JS6" class="JSS">
+                <button id="bt7" onclick="alert(document.getElementById('Home').innerText)">innerText</button>
+            </div>
+            <div id="JS7" class="JSS">
+                <img src="icon.png" alt="icon" id="imm">
+            </div>
+            <div id="JS8" class="JSS">
+                    <button id="butt" onclick="funb()">bye</button>
+            </div>
+        </div>
 
-            <div id="JS" class="tabcontent">
-                
-                <video id="vid" controls>
-                  <source src="vid/vid.mp4" type="video/mp4">
-                  
-                </video>
-
-                <h1>EXEMPLE JS </h1>
-                <button class="tablink1" onclick="openPage2('JS1')" id="defaultOpen2">JS1</button>
-                <button class="tablink1" onclick="openPage2('JS2')">JS2</button>
-                <button class="tablink1" onclick="openPage2('JS3')">JS3</button>
-                <button class="tablink1" onclick="openPage2('JS4')">JS4</button>
-                <button class="tablink1" onclick="openPage2('JS5')">JS5</button>
-                <button class="tablink1" onclick="openPage2('JS6')">JS6</button>
-                <button class="tablink1" onclick="openPage2('JS7')">JS7</button>
-                <button class="tablink1" onclick="openPage2('JS8')">JS8</button>
-                <div id="JS1" class="JSS">
+        <div id="FORM" class="tabcontent">
+            <fieldset class="c">
+                <div id="d"></div>
+                <legend>Coordonnées</legend>
+                <form>
                     <table>
                         <tr>
-                            <Td><label for="input1">NUM1 : </label></Td>
-                            <td> <input type="number" id="input1"></td>
-                            <td><label for="input2">NUM2 : </label></td>
-                            <td><input type="number" id="input2"></td>
+                            <td><label>Champs de texte</label></td>
+                            <td><input type="text" placeholder="Saisir un mot"></td>
                         </tr>
                         <tr>
-                            <td><label for="output1">RES : </label></td>
-                            <td><input type="number" id="output1"></td>
+                            <td><label>URL</label></td>
+                            <td><input type="url" placeholder="Saisir une URL"></td>
                         </tr>
                         <tr>
-                            <table id="mul">
-                                <td><button id="+" class="op" onclick="add()">+</button></td>
-                                <td><button id="-" class="op" onclick="sub()">-</button></td>
-                                <td><button id="*" class="op" onclick="mult()">*</button></td>
-                                <td><button id="/" class="op" onclick="div()">/</button></td>
-                            </table>
-                        </tr>                 
+                            <td><label>Text area</label></td>
+                            <td><textarea cols="60" rows="4"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label>E-mail</label></td>
+                            <td><input type="email" placeholder="Adresse mail"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Un nombre</label></td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Date</label></td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Couleur</label></td>
+                            <td><input type="color"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Fichier</label></td>
+                            <td><input type="file"></td>
+                        </tr>
+                        <tr>
+                            <button type="submit">Envoyer</button>
+                        </tr>
                     </table>
-                </div>
-                
-                <div id="JS2" class="JSS">
-                    <button onclick="alert('9chouch')" >alert</button>
-                </div>
-                    
-            </div>
+                </form>
+            </fieldset>
+        </div>
 
-            <div id="FORM" class="tabcontent">
-                <fieldset class="c">
-                    <legend>Coordonnées</legend>
-                    <form>
-                    <table>
-                    <tr>
-                    <td><label>Champs de texte</label></td>
-                    <td><input type="text" placeholder="Saisir un mot"></td>
-                    </tr>
-                    <tr>
-                    <td><label>URL</label></td>
-                    <td><input type="url" placeholder="Saisir une URL"></td>
-                    </tr>
-                    <tr>
-                    <td><label>E-mail</label></td>
-                    <td><input type="email" placeholder="Adresse mail"></td>
-                    </tr>
-                    <tr>
-                    <td><label>Un nombre</label></td>
-                    <td><input type="number" ></td>
-                    </tr>
-                    <tr>
-                    <td><label>Date</label></td>
-                    <td><input type="date" ></td>
-                    </tr>
-                    <tr>
-                    <td><label>Couleur</label></td>
-                    <td><input type="color" ></td>
-                    </tr>
-                    <tr>
-                    <td><label>Fichier</label></td>
-                    <td><input type="file" ></td>
-                    </tr>
-                    </table>
-                    </form>
-                </fieldset>
-            </div>
-
-        </main>
-        <footer>
-            <p>Made with <span class='heart'>&hearts;</span> by Iheb(<a href='https://github.com/WaveRaiderCeru'>@Ceru</a>)</p>
-          </footer>
-          <script  src="./script.js"></script>
-    </body>
+    </main>
+    <footer>
+        <p>Made with <span class='heart'>&hearts;</span> by Iheb(<a href='https://github.com/WaveRaiderCeru'>@Ceru</a>)
+        </p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
 
 </html>
-
-
